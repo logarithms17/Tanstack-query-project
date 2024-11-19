@@ -11,6 +11,7 @@ export default function NewEventsSection() {
     queryKey: ["events"],
     queryFn: fetchEvents,
     staleTime: 5000, // this controls how often the query is refetched
+    // gcTime: 5000, // this controls how often the query is garbage collected
   });
   let content;
 
